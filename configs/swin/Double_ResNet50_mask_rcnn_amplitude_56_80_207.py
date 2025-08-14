@@ -21,7 +21,7 @@ classes = ("Trans_PET","Color_PE","Trans_PP",  # 标签已改
 # # 新代码预训练权重
 # pretrained = R'H:\projects\mmdetr\pretrain_model/double_resnet/mask_rcnn_r50_fpn_mdconv_c3-c5_1x_coco_20200203-double_resnet.pth'
 # # 新代码预训练权重
-load_from = R'H:\projects\mmdetr_rebuild\pretrain_model/double_resnet_101_dcn/mask_rcnn_double_resnet101.pth'
+#load_from = R'H:\projects\mmdetr_rebuild\pretrain_model/double_resnet_101_dcn/mask_rcnn_double_resnet101.pth'
 
 mean = ([123.675, 116.28, 103.53] * 76)[:6]
 std  = ([58.395,  57.12,  57.375] * 76)[:6]

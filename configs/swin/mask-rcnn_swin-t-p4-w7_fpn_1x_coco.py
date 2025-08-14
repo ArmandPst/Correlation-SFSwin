@@ -5,7 +5,7 @@ _base_ = [
 ]
 
 dataset_type = 'CocoDataset'  # suffix='bmp', in_chans2=3, mean, std =...[:6]
-data_root = R"F:/Keras-Tf-Mask_rcnn_Jiantao/2022_9_10_PE_PP_PET/Band_73_80_207/coco_9Types_png/"
+data_root = "/mnt/nas/TRIA/DATA/MULTIMODAL/kaggle_dataset/PE_PP_PET_Band_73_80_207_instance_segmentation/PE_PP_PET_Band_73_80_207_instance_segmentation/Train_val_coco/"
 classes = ("Color_PP","Trans_PET","Color_PET",  # 标签已改
            "Trans_PP","White_PE","White_PET",
            "Trans_PE","White_PP","Color_PE")

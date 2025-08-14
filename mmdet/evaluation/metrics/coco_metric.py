@@ -419,6 +419,13 @@ class CocoMetric(BaseMetric):
         if self.img_ids is None:
             self.img_ids = self._coco_api.get_img_ids()
 
+        # Ensure 'info' field exists in dataset to prevent KeyError in loadRes
+        if 'info' not in self._coco_api.dataset:
+            self._coco_api.dataset['info'] = {
+                'date_created': str(datetime.datetime.now()),
+                'description': 'Default info added by CocoMetric.'
+            }
+
         # convert predictions to coco format and dump to json file
         result_files = self.results2json(preds, outfile_prefix)
 

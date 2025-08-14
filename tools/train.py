@@ -17,7 +17,7 @@ from mmdet.utils import setup_cache_size_limit_of_dynamo
     H:\projects\mmdetr_rebuild\configs\_base_\datasets\coco_instance.py
     H:\projects\mmdetr_rebuild\configs\_base_\schedules\schedule_1x.py
 ''' 
-work_path = R"H:\projects\mmdetr_rebuild\configs\swin/"
+work_path = "/home/adamiens/segmentation/Correlation-SFSwin/configs/swin/"
 
 out_fold = "correlation_swin_SrcSKNet_6h_4"  #
 # double_swin_rebuild, double_swin_rebuild_newpre, _2, _3, _4, _5, _6，_7 新设计预训练权重  # 在swin内部重建的双主干尝试 (mask_rcnn_swin_small)

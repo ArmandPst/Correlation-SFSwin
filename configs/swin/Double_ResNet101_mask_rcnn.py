@@ -11,14 +11,14 @@ _base_ = '../mask_rcnn/mask-rcnn_r50_fpn_1x_coco.py'  # base: mask-rcnn_r50_fpn.
 # _base_.optim_wrapper.type = 'AmpOptimWrapper'
 
 dataset_type = 'CocoDataset'  # suffix='bmp', in_chans2=3, mean, std =...[:6]
-data_root = R"F:/Keras-Tf-Mask_rcnn_Jiantao/2022_9_10_PE_PP_PET/Band_73_80_207/coco_9Types_png/"
+data_root = "/mnt/nas/TRIA/DATA/MULTIMODAL/kaggle_dataset/PE_PP_PET_Band_73_80_207_instance_segmentation/PE_PP_PET_Band_73_80_207_instance_segmentation/Train_val_coco/"
 classes = ("Color_PP","Trans_PET","Color_PET",  # 标签已改
            "Trans_PP","White_PE", "White_PET",
            "Trans_PE","White_PP", "Color_PE")
 
 
 # # 新代码预训练权重
-load_from = R'H:\projects\mmdetr_rebuild\pretrain_model/double_resnet_101_dcn/mask_rcnn_double_resnet101.pth'
+#load_from = R'H:\projects\mmdetr_rebuild\pretrain_model/double_resnet_101_dcn/mask_rcnn_double_resnet101.pth'
 
 mean = ([123.675, 116.28, 103.53] * 76)[:6]
 std  = ([58.395,  57.12,  57.375] * 76)[:6]
